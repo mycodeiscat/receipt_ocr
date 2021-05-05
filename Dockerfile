@@ -8,7 +8,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update -y
 RUN apt-get install -y python3-pip python3-dev build-essential
 RUN apt update && apt install -y libsm6 libxext6 libxrender-dev libgl1-mesa-dev
-RUN apt-get -y install tesseract-ocr
+RUN apt-get -y install tesseract-ocr tesseract-ocr-ukr
 
 COPY . /app
 

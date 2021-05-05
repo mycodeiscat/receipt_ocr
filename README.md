@@ -25,3 +25,13 @@ Upload a photo and specify document language(eng, ger, rus, ukr, etc.).
 The accuracy of the OCR detection depends on photo quality, lighting and other factors. 
 
 TODO: Add Language model/Spellchecker to improve accuracy. Formatted data extraction is also an interesting idea. 
+
+### Text recognition examples:
+Receipt in English      
+![receipt english](./assets/receipt_eng.jpg)        
+Resulting text      
+![receipt english result](./assets/receipt_result_eng.png)      
+Receipt in Ukrainian    
+![receipt ukranian](./assets/receipt_ukr.jpg)       
+Resulting text  
+![receipt english](./assets/receipt_result_ukr.png)     
