@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Receipt OCR</h1>
+
+<p><input type="file" name="file" id="file"></p>
+<p><label for="lang">Language(3 letters)</label><input minlength="3" maxlength="3" name="lang" id="lang"></p>
+<p>
+    <button onclick="sendImage()">Submit</button>
+</p>
+
+<div id="content">
+    Output
+</div>
+<script>
+    async function sendImage() {
+        let photo = document.getElementById("file").files[0];
+        const lang = document.getElementById("lang").value;
+        let formData = new FormData();
+        formData.append("file", photo);
+        formData.append("lang", lang);
+        const response = await fetch('/ocr', {method: "POST", body: formData})
+        const text = await response.text()
+        const output = document.getElementById("content")
+        output.innerText = text
+    }
+</script>
+</body>
+</html>

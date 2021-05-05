@@ -1,0 +1,9 @@
+opencv-python~=4.5.1.48
+pytesseract~=0.3.7
+numpy~=1.20.2
+scipy~=1.6.3
+Pillow~=8.2.0
+matplotlib~=3.4.1
+scikit-learn~=0.24.2
+scikit-image~=0.18.1
+Flask~=1.1.2
